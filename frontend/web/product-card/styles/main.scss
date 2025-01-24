@@ -1,0 +1,17 @@
+.product-card {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-card img {
+    border-radius: 4px;
+  }
+  
+  .product-card .price {
+    font-weight: bold;
+    color: #2a9d8f;
+  }
+  

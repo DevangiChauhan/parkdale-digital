@@ -1,0 +1,12 @@
+{% if product %}
+  <div class="product-card-wrapper">
+    <product-card
+      data-name="{{ product.title }}"
+      data-price="{{ product.price | money }}"
+      data-image="{{ product.featured_image | img_url: 'medium' }}"
+      data-handle="{{ product.handle }}">
+    </product-card>
+  </div>
+{% else %}
+  <p>Product not found.</p>
+{% endif %}
