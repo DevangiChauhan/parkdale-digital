@@ -1403,3 +1403,33 @@
   display: -webkit-box;
   overflow: hidden;
 }
+.product-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.product-card-container product-card {
+  flex: 1 1 calc(33% - 16px);
+  margin: 8px;
+}
+.product-card-wrapper{
+  max-width: 1100px !important;
+  margin: 0 auto !important;
+  padding: 50px 0px;
+}
+
+.product-card{
+  max-width: 1100px !important;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .product-card-container product-card {
+    flex: 1 1 100%;
+  }
+  .product-card{
+    padding: 0px 15px !important;
+  }
+}
+

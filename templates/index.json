@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "image_banner": {
@@ -75,10 +66,28 @@
         "padding_top": 44,
         "padding_bottom": 36
       }
+    },
+    "product-card": {
+      "type": "product-card",
+      "settings": {
+        "title": "Featured Product Card",
+        "heading_size": "h3",
+        "description": "Discover our latest product offerings with dynamic product cards.",
+        "show_description": true,
+        "product": "example-product",  
+        "image_ratio": "square",
+        "show_price": true,
+        "show_vendor": false,
+        "show_rating": true,
+        "show_button": true,
+        "button_label": "View Product",
+        "button_link": "shopify://collections/all"
+      }
     }
   },
   "order": [
     "image_banner",
-    "featured_collection"
+    "featured_collection",
+    "product-card"
   ]
 }

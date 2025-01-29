@@ -32,13 +32,9 @@ class ProductCard extends HTMLElement {
     // Structure of the Product Card
     this.shadowRoot.innerHTML = `
       <style>
-      .product-card-wrapper{
-        max-width:1100px;
-        margin:0 auto;
-        padding:50px auto;
-      }
         :host {
           display: block;
+          width: 100%;
           max-width: 300px;
           margin: 10px;
           box-sizing: border-box;
@@ -94,7 +90,6 @@ class ProductCard extends HTMLElement {
           outline: 2px solid #ff9800;
         }
 
-        /* Responsive Styles */
         @media (max-width: 600px) {
           .product-card-wrapper{
             padding:30px 0px !important;

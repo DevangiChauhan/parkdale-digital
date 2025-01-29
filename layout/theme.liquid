@@ -55,6 +55,7 @@
       assign body_font_italic = settings.type_body_font | font_modify: 'style', 'italic'
       assign body_font_bold_italic = body_font_bold | font_modify: 'style', 'italic'
     %}
+  {{ 'frontend/web/product-card/styles/main.css' | asset_url | stylesheet_tag }}
 
     {% style %}
       {{ settings.type_body_font | font_face: font_display: 'swap' }}
@@ -414,5 +415,7 @@ body {
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+      <script src="{{ 'main.js' | asset_url }}" defer></script>
+
   </body>
 </html>
